@@ -115,12 +115,88 @@ console.log(stud["age"]);
 
 let numb = 55;
 
-let guessNumber = prompt("Pleaes enter correct number");
+//let guessNumber = prompt("Pleaes enter correct number");
 
-while(numb != guessNumber){
+//while(numb != guessNumber){
 
-    guessNumber = prompt("Your enter wrong number");
-}
+    //guessNumber = prompt("Your enter wrong number");
+//}
 
 console.log("congratulation! you enter right number: ");
+
+
+let mark = {
+
+    Name : "Zeeshan Ali",
+    Roll_Number : 34,
+    clasa : "3rd",
+    isPass : true
+}
+
+for (let key in mark){
+
+    console.log("Key: ", key, "value: ",mark[key]);
+}
+
+//Special string
+
+
+let backTic = ` Add number ${3+4+6}`;
+console.log(backTic);
+
+//Escapse
+
+console.log("Muhammad \n Younus");
+console.log("Muhammad \t Younus");
+
+let str = "   Only enter string   ";
+console.log(str.toUpperCase());
+console.log(str.trim());
+console.log(str.length);
+
+//concatenation string
+
+let str1 = "Muhammad Younus";
+let str2 = "Wafa";
+
+let concte = str1.concat(str2);
+console.log(concte);
+
+//replace string or number
+
+let val = "red";
+console.log(val.replace("r","l"));
+
+//prompt the user to enter their full name. Generate ausername for them based on the input. start usernamewith @ followed by their full name and ending with the fullname length.
+
+let anme = "MuhammadYounus";
+let userName = "@" + anme + anme.length;
+console.log(userName);
+
+
+//Array
+
+let array = ['Robot', 'Tara Zameen par','kuch kuch hota han', 'sapna'];
+
+for (let index of array){
+
+    console.log(index.toUpperCase());
+}
+
+//For a given array with marks of students [85,97,44,37,76,601]. find the average marks of the entire class. let start
+
+let mark_of_student = [87,97,44,37,76,601];
+let sum = 0;
+ 
+for(let ind =0; ind < mark_of_student.length; ind++){
+
+    sum =sum+mark_of_student[ind];
+}
+console.log(`The sum is: ${sum}`)
+
+let average = sum/mark_of_student.length;
+
+console.log("The average of mark is: " + average);
+
+
 
