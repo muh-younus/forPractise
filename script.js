@@ -196,7 +196,79 @@ console.log(`The sum is: ${sum}`)
 
 let average = sum/mark_of_student.length;
 
-console.log("The average of mark is: " + average);
+console.log("The average of mark is: " + average +"\n");
+
+let price = [220,330,440,550,660,770,880,990];
+let i=0;
+
+
+for (let endprice of price){
+
+    console.log(`Product ${i} is: \n the old price is: ${endprice}`)
+
+    let discount =endprice/10;
+
+    console.log(`The offer is : ${discount}%`);
+    let finalPrice = endprice - discount;
+
+    console.log(`The final price is: ${finalPrice}`);
+    i++;
+
+
+
+
+
+}
+
+
+//push and pop operation in array
+
+let foodName = ['apple','banana','apricot','mango','pear'];
+
+console.log(foodName);
+foodName.push("grapes",'peanut');
+console.log(foodName);
+foodName.pop();
+let del = foodName.pop();
+console.log("deleted: " ,del);
+console.log(foodName);
+console.log("The string is: " ,foodName.toString());
+console.log(foodName);
+
+//convert array to string
+let number = [11,22,33,44,55,66];
+console.log(number.toString());
+console.log(number);
+
+//concatenation
+
+let cont = [11,22,33,44,55,66];
+let playerName = ['ali','burhan','taha','munzil'];
+let game = ['cricket ','football','tennis','volleyball'];
+//add something in start
+game.unshift('footsall');
+//delete something in end
+cont.shift();
+let concatenation =playerName.concat(game).concat(cont);
+console.log(concatenation);
+
+//slice and splice method in array .orignal array cannot be change
+
+let movie = ['dilwala', 'thor','antman','gabbar'];
+console.log(movie.slice(1,3));
+console.log(movie.slice(1));
+console.log(movie.slice());
+
+let comp = ['bloomberg','microsoft','uber','google','ibm','netflix'];
+
+console.log(comp);
+console.log(comp.splice(0,1));
+console.log(comp);
+console.log(comp.splice(1,1,'ola'))
+console.log(comp);
+comp.push("amazon");
+
+console.log(comp)
 
 
 
