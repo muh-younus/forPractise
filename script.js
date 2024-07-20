@@ -271,4 +271,32 @@ comp.push("amazon");
 console.log(comp)
 
 
+//find vowel in string using function
+
+function myFunction(str){
+
+for (let char of str){
+   if(char === "a" || char ==="e" || char==="i" || char === "o" ||char === "u" ){
+    count++;
+   }
+}
+console.log(`The total number of vowel is ${count}`);
+}
+
+let count = 0;
+myFunction("Muhammad Younus");
+
+//forEach loop
+
+let ar1 = ["ali","javed","kashif","zohaib","laila","lubna","kashi","haider"];
+let ar2 = [11,22,33,44,55,66];
+let ar3 = sr1.concat(ar1).concat(ar3)
+
+ar3.forEach((value, index) =>{
+
+    console.log(index ," ", value);
+});
+
+
+
 
